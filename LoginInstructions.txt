@@ -1,0 +1,23 @@
+1. ng new ProjectName
+2. cd ProjectLogin
+3. fix rxjs ^ problem in package.json
+4. npm install
+5. ng serve --open
+6. ng g c Registration --spec=false
+   ng g c Login --spec=false
+7. add FormsModule & RouterModule in import section of app.module.ts
+8. add routerLink & routerOutlet in app.component.html
+9. create registration & login form
+10. start json-server by 'json-server --watch db.json'
+11. change the api from posts to users and make it blank
+12. create a service by using ng g s User --spec=false
+13. import HttpClientModule in app.module.ts
+    import { HttpClientModule } from '@angular/common/http';
+14. create a reference of HttpClient in userService
+    constructor(private http: HttpClient) { }
+15. this.http.post(this.url, {
+      name : data.name,
+      username : data.username,
+      password : data.password
+    }).toPromise(); 
+16.
