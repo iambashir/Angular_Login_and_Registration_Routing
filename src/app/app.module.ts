@@ -8,11 +8,11 @@ import { SigninComponent } from './signin/signin.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-import appRoutes from './router.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 
 @NgModule({
@@ -30,7 +30,7 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    RouterModule.forRoot(appRoutes, { useHash: true })
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

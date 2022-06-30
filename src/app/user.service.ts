@@ -20,7 +20,7 @@ export class UserService {
     // data.password = "";
   }
 
-  loginUser(data){
-    return this.http.get(this.url);
-  }
+  // loginUser(data){
+  //   return this.http.get(this.url);
+  // }
 }
